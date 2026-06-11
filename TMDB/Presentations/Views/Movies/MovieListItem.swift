@@ -1,0 +1,44 @@
+//
+//  MovieListItem.swift
+//  TMDB
+//
+//  Created by AVINASH on 12/06/26.
+//
+
+import SwiftUI
+import NukeUI
+
+struct MovieListItem: View {
+    let movie: Movie
+    var body: some View {
+        NavigationLink {
+            MovieDetailView(movieID: movie.id)
+        } label: {
+            HStack {
+                HStack(alignment: .top, spacing: 20) {
+                    LazyImage(url: movie.posterURL) { state in
+                        if let image = state.image {
+                            image.resizable()
+                        } else {
+                            Color.gray.overlay(alignment: .center) {
+                                ProgressLoader()
+                            }
+                        }
+                    }.frame(width: 70, height: 70)
+                        .scaledToFill()
+                        .cornerRadius(6)
+                    
+                    VStack(alignment: .leading) {
+                        Text(movie.title)
+                            .font(.subheadline)
+                        
+                        Text(movie.overview)
+                            .font(.caption)
+                            .lineLimit(3)
+                    }
+                }
+            }.listRowBackground(Color("Background"))
+        }
+    }
+}
+

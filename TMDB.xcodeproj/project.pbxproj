@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E129200E2FC476C700869157 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = E129200D2FC476C700869157 /* FactoryKit */; };
+		E12920102FC476CD00869157 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = E129200F2FC476CD00869157 /* Nuke */; };
+		E12920122FC476D100869157 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = E12920112FC476D100869157 /* NukeUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E1291FE82FC475F500869157 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12920122FC476D100869157 /* NukeUI in Frameworks */,
+				E129200E2FC476C700869157 /* FactoryKit in Frameworks */,
+				E12920102FC476CD00869157 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,7 @@
 				E1291FDC2FC475F500869157 /* TMDB */,
 				E1291FEA2FC475F500869157 /* TMDBTests */,
 				E1291FF42FC475F600869157 /* TMDBUITests */,
+				E129200C2FC476C700869157 /* Frameworks */,
 				E1291FDB2FC475F500869157 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +100,13 @@
 				E1291FF12FC475F600869157 /* TMDBUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E129200C2FC476C700869157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +129,9 @@
 			);
 			name = TMDB;
 			packageProductDependencies = (
+				E129200D2FC476C700869157 /* FactoryKit */,
+				E129200F2FC476CD00869157 /* Nuke */,
+				E12920112FC476D100869157 /* NukeUI */,
 			);
 			productName = TMDB;
 			productReference = E1291FDA2FC475F500869157 /* TMDB.app */;
@@ -178,10 +198,12 @@
 					};
 					E1291FE62FC475F500869157 = {
 						CreatedOnToolsVersion = 26.5;
+						LastSwiftMigration = 2650;
 						TestTargetID = E1291FD92FC475F500869157;
 					};
 					E1291FF02FC475F600869157 = {
 						CreatedOnToolsVersion = 26.5;
+						LastSwiftMigration = 2650;
 						TestTargetID = E1291FD92FC475F500869157;
 					};
 				};
@@ -195,6 +217,10 @@
 			);
 			mainGroup = E1291FD12FC475F400869157;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E129200A2FC4769D00869157 /* XCRemoteSwiftPackageReference "Factory" */,
+				E129200B2FC476BD00869157 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E1291FDB2FC475F500869157 /* Products */;
 			projectDirPath = "";
@@ -471,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -484,6 +511,8 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "TMDBTests/Helpers/TMDBTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -496,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -509,6 +539,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "TMDBTests/Helpers/TMDBTests-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -520,6 +551,7 @@
 		E12920022FC475F600869157 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -533,6 +565,8 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "TMDBUITests/TMDBUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -544,6 +578,7 @@
 		E12920032FC475F600869157 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -557,6 +592,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "TMDBUITests/TMDBUITests-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -605,6 +641,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E129200A2FC4769D00869157 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+		E129200B2FC476BD00869157 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E129200D2FC476C700869157 /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E129200A2FC4769D00869157 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
+		};
+		E129200F2FC476CD00869157 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E129200B2FC476BD00869157 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		E12920112FC476D100869157 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E129200B2FC476BD00869157 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1291FD22FC475F400869157 /* Project object */;
 }

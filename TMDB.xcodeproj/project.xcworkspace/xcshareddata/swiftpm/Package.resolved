@@ -1,0 +1,24 @@
+{
+  "originHash" : "93aec2e34cfcd6d1908bdc9be71f967acf0f76574072b27f9b80e72b32c5294c",
+  "pins" : [
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory",
+      "state" : {
+        "revision" : "8c1c080cdf74188dd6aaa36d8d13206bb465f8f1",
+        "version" : "3.0.4"
+      }
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke",
+      "state" : {
+        "revision" : "63a8fcbd6621340a2410bc3e9575ac97058615f4",
+        "version" : "13.0.6"
+      }
+    }
+  ],
+  "version" : 3
+}
