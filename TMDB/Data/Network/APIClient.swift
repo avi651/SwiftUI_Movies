@@ -70,7 +70,7 @@ final class APIClientImpl: APIClient {
         components.host = APIClientImpl.host
         components.path = APIClientImpl.path + endpoint.path
         
-        var query = [URLQueryItem(name: "api_key", value: "3d1e168270fc970e38b8eaeb9ed5c253")]
+        var query = [URLQueryItem(name: "api_key", value: "")]
         let sessionID: SessionID? = UserDefaults.standard.string(forKey: UserDefaultKeys.sessionID)
         if sessionID != nil {
             query.append(URLQueryItem(name: "session_id", value: sessionID))
