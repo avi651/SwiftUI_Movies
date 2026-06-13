@@ -10,6 +10,10 @@
 		E129200E2FC476C700869157 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = E129200D2FC476C700869157 /* FactoryKit */; };
 		E12920102FC476CD00869157 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = E129200F2FC476CD00869157 /* Nuke */; };
 		E12920122FC476D100869157 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = E12920112FC476D100869157 /* NukeUI */; };
+		E1C635722FDD8C5400B096EC /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = E1C635702FDD8C5400B096EC /* Fastfile */; };
+		E1C635732FDD8C5400B096EC /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = E1C6356F2FDD8C5400B096EC /* Appfile */; };
+		E1C635762FDD8C6400B096EC /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = E1C635742FDD8C6400B096EC /* Gemfile */; };
+		E1C635772FDD8C6400B096EC /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = E1C635752FDD8C6400B096EC /* Gemfile.lock */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,10 @@
 		E1291FDA2FC475F500869157 /* TMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1291FE72FC475F500869157 /* TMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1291FF12FC475F600869157 /* TMDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C6356F2FDD8C5400B096EC /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		E1C635702FDD8C5400B096EC /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		E1C635742FDD8C6400B096EC /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		E1C635752FDD8C6400B096EC /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -89,6 +97,9 @@
 				E1291FF42FC475F600869157 /* TMDBUITests */,
 				E129200C2FC476C700869157 /* Frameworks */,
 				E1291FDB2FC475F500869157 /* Products */,
+				E1C635712FDD8C5400B096EC /* fastlane */,
+				E1C635742FDD8C6400B096EC /* Gemfile */,
+				E1C635752FDD8C6400B096EC /* Gemfile.lock */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +118,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1C635712FDD8C5400B096EC /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				E1C6356F2FDD8C5400B096EC /* Appfile */,
+				E1C635702FDD8C5400B096EC /* Fastfile */,
+			);
+			path = fastlane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C635762FDD8C6400B096EC /* Gemfile in Resources */,
+				E1C635772FDD8C6400B096EC /* Gemfile.lock in Resources */,
+				E1C635722FDD8C5400B096EC /* Fastfile in Resources */,
+				E1C635732FDD8C5400B096EC /* Appfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

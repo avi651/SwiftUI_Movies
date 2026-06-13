@@ -1,0 +1,29 @@
+default_platform(:ios)
+
+platform :ios do
+
+  lane :tests do
+    run_tests(
+      scheme: "TMDB"
+    )
+  end
+
+  lane :build do
+    build_ios_app(
+      scheme: "TMDB",
+      skip_codesigning: true
+    )
+  end
+
+  lane :ci do
+    run_tests(
+      scheme: "TMDB"
+    )
+
+    build_ios_app(
+      scheme: "TMDB",
+      skip_codesigning: true
+    )
+  end
+
+end
