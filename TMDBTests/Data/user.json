@@ -1,4 +1,3 @@
-
 {
     "avatar": {
         "gravatar": {
@@ -11,7 +10,7 @@
     "id": 123,
     "iso_639_1": "en",
     "iso_3166_1": "IN",
-    "name": "Avinash K",
+    "name": "Avinash",
     "include_adult": false,
-    "username": "avi651"
+    "username": "kumaravi651"
 }
